@@ -14,7 +14,7 @@ const Menu = () => {
           <Link href="/resources">Resources</Link>
         </li>
         <li>
-          <Link href="/product">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>

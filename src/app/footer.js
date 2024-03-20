@@ -26,7 +26,7 @@ const footer = () => {
           <section>
             <div className="logo-footer">
               <Link href="/">
-                <Image src={LogoFooter} />
+                <Image src={LogoFooter} alt="logo-footer" />
               </Link>
             </div>
             <div className="list-social">

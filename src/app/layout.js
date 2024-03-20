@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./header";
 import Footer from "./footer";
-import SliderBg from "./components/BackgroundSlider";
+import BackgroundSlider from "./components/BackgroundSlider";
 // import SimpleSlider from "./components/Slider";
 
 const montserrat = Montserrat({
@@ -20,10 +20,7 @@ export default function RootLayout({ children }) {
         <header>
           <Header />
         </header>
-        {/* <nav><SliderSimple /></nav> */}
-        <nav>
-          <SliderBg />
-        </nav>
+        <nav>{/* <SliderSimple /> */}</nav>
         <main>{children}</main>
         <footer>
           <Footer />

@@ -1,35 +1,69 @@
 import React from "react";
 import { Carousel } from "antd";
-import BannerSlider from "../assets/bannerslider.png";
 import Image from "next/image";
+import SlideBg from "../assets/bannerslider.png";
+
 const contentStyle = {
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
+  width: "100%",
+  height: "565px",
 };
-const App = () => (
+const BackgroundSlider = () => (
   <Carousel effect="fade">
-    <div>
+    <div className="slide-item">
       <div style={contentStyle}>
-        <Image src={BannerSlider} alt="banner" />
+        <Image
+          className="banner-carousel"
+          src={SlideBg}
+          alt="slide"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </div>
-    <div>
+    <div className="slide-item">
       <div style={contentStyle}>
-        <Image src={BannerSlider} alt="banner" />
+        <Image
+          src={SlideBg}
+          className="banner-carousel"
+          alt="slide"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </div>
-    <div>
+    <div className="slide-item">
       <div style={contentStyle}>
-        <Image src={BannerSlider} alt="banner" />
+        <Image
+          className="banner-carousel"
+          src={SlideBg}
+          alt="slide"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </div>
-    <div>
+    <div className="slide-item">
       <div style={contentStyle}>
-        <Image src={BannerSlider} alt="banner" />
+        <Image
+          className="banner-carousel"
+          src={SlideBg}
+          alt="slide"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </div>
+    <div className="slide-item">
+      <div style={contentStyle}>
+        <Image
+          className="banner-carousel"
+          src={SlideBg}
+          alt="slide"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </div>
   </Carousel>
 );
-export default App;
+export default BackgroundSlider;
