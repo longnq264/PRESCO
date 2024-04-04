@@ -1,0 +1,10 @@
+{
+  "images": [
+    { "id": 1, "src": "/member1.png", "data": "data_1" },
+    { "id": 2, "src": "/member1.png", "data": "data_1" },
+    { "id": 3, "src": "/member1.png", "data": "data_1" },
+    { "id": 4, "src": "/member1.png", "data": "data_1" },
+    { "id": 5, "src": "/member1.png", "data": "data_1" },
+    { "id": 6, "src": "/member1.png", "data": "data_1" }
+  ]
+}

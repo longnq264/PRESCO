@@ -1,6 +1,7 @@
 import React from "react";
 import DropdownBtn from "./Dropdown";
 import { Form } from "antd";
+import axios from "axios";
 const data = [
   { id: 1, name: "Year" },
   { id: 2, name: "Make" },
@@ -9,6 +10,10 @@ const data = [
   { id: 5, name: "All Categories" },
 ];
 const Filter = () => {
+  const fetchdata = axios.get("https://api.restful-api.dev/objects");
+  if (fetchdata) {
+    console.log(fetchdata);
+  }
   return (
     <div className="filter-container layout-site">
       <div className="filter-content">

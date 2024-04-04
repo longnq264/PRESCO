@@ -32,7 +32,7 @@ nav.nav-bar-menu ul li a {
   position: relative;
 }
 .footer-top-menu {
-  background-image: url(assets/background.png);
+  background-image: url("../../public/assets/background.png");
 }
 .footer-top-menu .content-site {
   position: absolute;
@@ -219,7 +219,26 @@ section.core-item p.content {
   text-align: center;
   text-transform: lowercase;
 }
-.categories-product {
+.categories-product .wrap-content {
   background-color: #ececec;
+  padding: 30px 0;
+  box-shadow: -3px 8px 7px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.category-container.layout-site .box-item {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+h1.title-site {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.48px;
+  color: #445a8e;
+  margin-bottom: 20px;
 }
 

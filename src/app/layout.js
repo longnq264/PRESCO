@@ -1,9 +1,6 @@
 import { Montserrat } from "next/font/google";
-import "./globals.css";
-import Header from "./header";
-import Footer from "./footer";
-import BackgroundSlider from "./components/BackgroundSlider";
-// import SimpleSlider from "./components/Slider";
+import "@/styles/globals.css";
+import LayoutSite from "@/components/Layout";
 
 const montserrat = Montserrat({
   weight: ["100", "700"],
@@ -17,14 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <header>
-          <Header />
-        </header>
-        <nav>{/* <SliderSimple /> */}</nav>
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <LayoutSite>{children}</LayoutSite>
       </body>
     </html>
   );

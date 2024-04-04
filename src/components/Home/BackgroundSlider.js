@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "antd";
 import Image from "next/image";
-import SlideBg from "../assets/bannerslider.png";
+import SlideBg from "@/public/assets/bannerslider.png";
 
 const contentStyle = {
   width: "100%",
