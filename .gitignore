@@ -37,3 +37,6 @@ next-env.d.ts
 
 # env files 
 .env*
+
+#backend
+/graphql-api/node_modules

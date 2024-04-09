@@ -8,62 +8,58 @@ const contentStyle = {
   height: "565px",
 };
 const BackgroundSlider = () => (
-  <Carousel effect="fade">
-    <div className="slide-item">
-      <div style={contentStyle}>
-        <Image
-          className="banner-carousel"
-          src={SlideBg}
-          alt="slide"
-          layout="fill"
-          objectFit="cover"
-        />
+  <nav className="slider-main">
+    <Carousel effect="fade">
+      <div className="slide-item">
+        <div style={contentStyle}>
+          <Image className="banner-carousel" src={SlideBg} alt="slide" fill />
+        </div>
       </div>
-    </div>
-    <div className="slide-item">
-      <div style={contentStyle}>
-        <Image
-          src={SlideBg}
-          className="banner-carousel"
-          alt="slide"
-          layout="fill"
-          objectFit="cover"
-        />
+      <div className="slide-item">
+        <div style={contentStyle}>
+          <Image
+            src={SlideBg}
+            className="banner-carousel"
+            alt="slide"
+            fill
+            // objectFit="cover"
+          />
+        </div>
       </div>
-    </div>
-    <div className="slide-item">
-      <div style={contentStyle}>
-        <Image
-          className="banner-carousel"
-          src={SlideBg}
-          alt="slide"
-          layout="fill"
-          objectFit="cover"
-        />
+      <div className="slide-item">
+        <div style={contentStyle}>
+          <Image
+            className="banner-carousel"
+            src={SlideBg}
+            alt="slide"
+            fill
+            // objectFit="cover"
+          />
+        </div>
       </div>
-    </div>
-    <div className="slide-item">
-      <div style={contentStyle}>
-        <Image
-          className="banner-carousel"
-          src={SlideBg}
-          alt="slide"
-          layout="fill"
-          objectFit="cover"
-        />
+      <div className="slide-item">
+        <div style={contentStyle}>
+          <Image
+            className="banner-carousel"
+            src={SlideBg}
+            alt="slide"
+            fill
+            // objectFit="cover"
+          />
+        </div>
       </div>
-    </div>
-    <div className="slide-item">
-      <div style={contentStyle}>
-        <Image
-          className="banner-carousel"
-          src={SlideBg}
-          alt="slide"
-          layout="fill"
-          objectFit="cover"
-        />
+      <div className="slide-item">
+        <div style={contentStyle}>
+          <Image
+            className="banner-carousel"
+            src={SlideBg}
+            alt="slide"
+            fill
+            // objectFit="cover"
+          />
+        </div>
       </div>
-    </div>
-  </Carousel>
+    </Carousel>
+  </nav>
 );
 export default BackgroundSlider;

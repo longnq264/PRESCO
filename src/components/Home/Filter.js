@@ -15,10 +15,12 @@ const Filter = () => {
     console.log(fetchdata);
   }
   return (
-    <div className="filter-container layout-site">
-      <div className="filter-content">
-        <h1>Find a product by</h1>
-        <div className="filter"></div>
+    <div className="filter-main">
+      <div className="filter-container layout-site">
+        <div className="filter-content">
+          <h1>Find a product by</h1>
+          <div className="filter"></div>
+        </div>
       </div>
     </div>
   );

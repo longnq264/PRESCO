@@ -1,10 +1,10 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
-const createApolloClient = () => {
+const client = () => {
   return new ApolloClient({
-    uri: "https://dog.ceo/api/breeds/image/random",
+    uri: "http://localhost:4000/",
     cache: new InMemoryCache(),
   });
 };
 
-export default createApolloClient;
+export default client;

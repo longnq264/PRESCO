@@ -241,4 +241,7 @@ h1.title-site {
   color: #445a8e;
   margin-bottom: 20px;
 }
+ul.slick-dots.slick-dots-bottom li.slick-active {
+  width: 16px;
+}
 

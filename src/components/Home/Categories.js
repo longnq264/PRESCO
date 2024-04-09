@@ -40,26 +40,33 @@ const Categories = () => {
   ];
   // console.log("list src", productData);
   return (
-    <div className="category-container layout-site">
-      <Flex gap="middle" align="center">
-        {productData.map((data, index) => (
-          <Flex
-            key={index}
-            style={boxStyle}
-            justify="center"
-            align="center"
-            vertical
-          >
-            <div className="box-item">
-              <Image src={`${data.src.src}`} alt="logo" />
-              <h3>{`${data.data.title}`}</h3>
-              <p>{`${data.data.desc}`}</p>
-              <Button>View More</Button>
-            </div>
-          </Flex>
-        ))}
-      </Flex>
-    </div>
+    <>
+      <div className="categories-product">
+        <h1 className="title-site">our product</h1>
+        <div className="wrap-content">
+          <div className="category-container layout-site">
+            <Flex gap="middle" align="center">
+              {productData.map((data, index) => (
+                <Flex
+                  key={index}
+                  style={boxStyle}
+                  justify="center"
+                  align="center"
+                  vertical
+                >
+                  <div className="box-item">
+                    <Image src={`${data.src.src}`} alt="logo" />
+                    <h3>{`${data.data.title}`}</h3>
+                    <p>{`${data.data.desc}`}</p>
+                    <Button>View More</Button>
+                  </div>
+                </Flex>
+              ))}
+            </Flex>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
